@@ -22,7 +22,7 @@
 // § To check if number A is at least double number B, check for A >= 2 * B.
 // Apply this to the team's average scores
 
-//Code here
+//Code here:
 //1.
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
