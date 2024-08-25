@@ -3,9 +3,10 @@
 
 // Ex:
 // Destructuring assignment from object
-const obj = { first: 'Jane', last: 'Doe' };
-const {first, last} = obj;
-console.log(first); // Jane
+// const obj = { first: 'Jane', last: 'Doe' };
+// const {first, last} = obj;
+// console.log(first); // Jane
+
 // Explain: Destructuring assignment from object
 // Tạo một object obj với 2 properties là first và last.
 // Sử dụng destructuring assignment để gán giá trị của obj.first cho first và obj.last cho last. 2 biến được gán phải có cùng tên với properties trong object cho trước.
@@ -49,4 +50,18 @@ printName(obj2); // undefined because we are trying to access ages property whic
 function printNameAndAge({name, age}) {
     console.log(name + " is " + age + " years old");
 }
-printNameAndAge(obj2); // Jane is 22 years old
+// printNameAndAge(obj2); // Jane is 22 years old
+
+// Rest properties
+// Rest properties cho phép chúng ta lấy các phần tử còn lại của một iterable value (array hoặc object) và gán chúng vào một biến.
+
+//Ex:
+// Rest properties in array
+const arr1 = [1, 2, 3, 4, 5];
+const [a, b, ...rest] = arr1;
+console.log(a); // 1
+
+// Rest properties in object
+const obj3 = {first: 'Jane', last: 'Doe', age: 22};
+const {first, ...rest1} = obj3;
+console.log(first); // Jane
