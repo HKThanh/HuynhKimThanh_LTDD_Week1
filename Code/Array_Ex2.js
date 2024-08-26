@@ -21,16 +21,6 @@ function calcAverageHumanAge(ages) {
     // 3. Calculate the average human age of all adult dogs (you should already know
     // from other challenges how we calculate averages �)
     const average = ages.reduce((acc, age) => acc + age, 0) / ages.length;
-    // explain:
-    // 1. reduce method is used to calculate the sum of all ages
-    // How does reduce method work?
-    // reduce method takes two arguments: a callback function and an initial value
-    // The callback function takes two arguments: accumulator and current value
-    // The initial value is the initial value of the accumulator
-    // reduce method iterates over the array and applies the callback function to each element
-    // The callback function calculates the sum of the accumulator and the current value
-    // The initial value of the accumulator is 0
-    // The sum of all ages is stored in the accumulator
     console.log(average);
 }
 // 4. Run the function for both test datasets
