@@ -1,9 +1,12 @@
 // 10. Calculate the sum of numbers in an array of numbers
 let numbers = [1, 2, 3, 4, 5];
-let sum = 0;
-sum = numbers.reduce((acc, curr) => acc + curr, 0);
-console.log(sum);
+let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+// console.log(sum);
+
 // 11. Calculate the average of the numbers in an array of numbers
+let average = sum / numbers.length;
+console.log(average);
+
 // 12. Create a function that receives an array of numbers as argument and returns an array
 // containing only the positive numbers
 // 13. Find the maximum number in an array of numbers
