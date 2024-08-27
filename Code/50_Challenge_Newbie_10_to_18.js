@@ -34,7 +34,7 @@ let fibo = [0, 1];
 for (let i = 2; i < n; i++) {
     fibo[i] = fibo[i - 1] + fibo[i - 2];
 }
-console.log(fibo);
+// console.log(fibo);
 // 15. Create a function that will find the nth Fibonacci number using recursion
 function fibonacci(n) {
     if (n <= 1) {
@@ -42,7 +42,20 @@ function fibonacci(n) {
     }
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
-console.log(fibonacci(2));
+// console.log(fibonacci(2));
 // 16. Create a function that will return a Boolean specifying if a number is prime
+function isPrime(n) {
+    if (n < 2) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isPrime(2));
 // 17. Calculate the sum of digits of a positive integer number
 // 18. Print the first 100 prime numbers
