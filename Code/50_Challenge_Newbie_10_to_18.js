@@ -66,5 +66,15 @@ function sumDigits(n) {
     }
     return sum;
 }
-console.log(`Sum of digits of 123 is: ${sumDigits(123)}`);
+// console.log(`Sum of digits of 123 is: ${sumDigits(123)}`);
 // 18. Print the first 100 prime numbers
+let count = 0;
+let i = 2;
+
+while (count < 100) {
+    if (isPrime(i)) {
+        console.log(i);
+        count++;
+    }
+    i++;
+}
