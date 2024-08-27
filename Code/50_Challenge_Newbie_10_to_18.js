@@ -56,6 +56,15 @@ function isPrime(n) {
     return true;
 }
 
-console.log(isPrime(2));
+// console.log(isPrime(2));
 // 17. Calculate the sum of digits of a positive integer number
+function sumDigits(n) {
+    let sum = 0;
+    while (n > 0) {
+        sum += n % 10;
+        n = Math.floor(n / 10);
+    }
+    return sum;
+}
+console.log(`Sum of digits of 123 is: ${sumDigits(123)}`);
 // 18. Print the first 100 prime numbers
