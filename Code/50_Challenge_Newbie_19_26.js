@@ -97,3 +97,16 @@ that are either in the first array or second array
 but not in both: ${mergeArraysNotBoth([1, 2, 3, 4], [1, 4, 5])}`);
 // 26. Create a function that will receive two arrays and will return an array with elements that
 // are in the first array but not in the second
+function mergeArraysNotInSecond(arr1, arr2) {
+    let result = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (!arr2.includes(arr1[i])) {
+            result.push(arr1[i]);
+        }
+    }
+    return result;
+}
+
+console.log(`Merge [1, 2, 3, 4] and [1, 4, 5] 
+return an array which has elements in first array 
+but not in second array: ${mergeArraysNotInSecond([1, 2, 3, 4], [1, 4, 5])}`);
