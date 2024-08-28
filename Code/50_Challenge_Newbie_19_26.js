@@ -52,6 +52,21 @@ function reverseArray(arr) {
 
 console.log(`Reverse [1, 2, 3, 4, 5]: ${reverseArray([1, 2, 3, 4, 5])}`);
 // 23. Reverse a string
+// Cach 1:
+// function reverseString(str) {
+//     let result = '';
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         result += str[i];
+//     }
+//     return result;
+// }
+
+// Cach 2:
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+console.log(`Reverse 'Hello World': ${reverseString('Hello World')}`);
 // 24. Create a function that will merge two arrays and return the result as a new array
 // 25. Create a function that will receive two arrays of numbers as arguments and return an
 // array composed of all the numbers that are either in the first array or second array but not in
