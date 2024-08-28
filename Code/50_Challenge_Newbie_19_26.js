@@ -37,6 +37,20 @@ function rotateRight(arr) {
 
 console.log(`Rotate [1, 2, 3, 4, 5] to right 1 position: ${rotateRight([1, 2, 3, 4, 5])}`);
 // 22. Reverse an array
+// Cach 1:
+// function  reverseArray(arr) {
+//     let result = [];
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         result.push(arr[i]);
+//     }
+//     return result;
+// }
+// Cach 2:
+function reverseArray(arr) {
+    return arr.reverse();
+}
+
+console.log(`Reverse [1, 2, 3, 4, 5]: ${reverseArray([1, 2, 3, 4, 5])}`);
 // 23. Reverse a string
 // 24. Create a function that will merge two arrays and return the result as a new array
 // 25. Create a function that will receive two arrays of numbers as arguments and return an
