@@ -29,6 +29,13 @@ function rotateLeft(arr) {
 
 console.log(`Rotate [1, 2, 3, 4, 5] to left 1 position: ${rotateLeft([1, 2, 3, 4, 5])}`);
 // 21. Rotate an array to the right 1 position
+function rotateRight(arr) {
+    let last = arr.pop();
+    arr.unshift(last);
+    return arr;
+}
+
+console.log(`Rotate [1, 2, 3, 4, 5] to right 1 position: ${rotateRight([1, 2, 3, 4, 5])}`);
 // 22. Reverse an array
 // 23. Reverse a string
 // 24. Create a function that will merge two arrays and return the result as a new array
