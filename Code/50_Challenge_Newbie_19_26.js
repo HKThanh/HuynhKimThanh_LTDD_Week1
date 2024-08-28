@@ -19,8 +19,15 @@ function isPrime(n) {
     return true;
 }
 
-console.log(firstPrimeNumbersGreaterThanN(10, 5));
+// console.log(firstPrimeNumbersGreaterThanN(10, 5));
 // 20. Rotate an array to the left 1 position
+function rotateLeft(arr) {
+    let first = arr.shift();
+    arr.push(first);
+    return arr;
+}
+
+console.log(`Rotate [1, 2, 3, 4, 5] to left 1 position: ${rotateLeft([1, 2, 3, 4, 5])}`);
 // 21. Rotate an array to the right 1 position
 // 22. Reverse an array
 // 23. Reverse a string
