@@ -76,5 +76,24 @@ console.log(`Merge [1, 2, 3] and [4, 5, 6]: ${mergeArrays([1, 2, 3], [4, 5, 6])}
 // 25. Create a function that will receive two arrays of numbers as arguments and return an
 // array composed of all the numbers that are either in the first array or second array but not in
 // both
+function mergeArraysNotBoth(arr1, arr2) {
+    let result = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (!arr2.includes(arr1[i])) {
+            result.push(arr1[i]);
+        }
+    }
+    for (let i = 0; i < arr2.length; i++) {
+        if (!arr1.includes(arr2[i])) {
+            result.push(arr2[i]);
+        }
+    }
+    return result;
+}
+
+console.log(`Merge [1, 2, 3, 4] và [1, 4, 5] 
+and return an array composed of all the numbers 
+that are either in the first array or second array 
+but not in both: ${mergeArraysNotBoth([1, 2, 3, 4], [1, 4, 5])}`);
 // 26. Create a function that will receive two arrays and will return an array with elements that
 // are in the first array but not in the second
